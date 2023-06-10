@@ -28,5 +28,5 @@ public class AppHelloWorldSpring {
  * Application Context is widely used
  * any Java object is pojo 
  * we can get all the list of beans by Calling Arrays.stream(context.getBeamDefinitionNames()).forEach(System.out::println)
- * if there are conflict on calling Beans we should call one @Primary
+ * if there are conflict on calling Beans we should call one @Primary   
  */
