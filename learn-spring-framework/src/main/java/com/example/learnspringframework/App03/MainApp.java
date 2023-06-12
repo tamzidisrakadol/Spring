@@ -11,9 +11,10 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 public class MainApp {
     public static void main(String[] args) {
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(PaymentServiceImpl.class);
-        context.getBean("makePayment");
-
+        int amount =1000;
+        ApplicationContext context = new AnnotationConfigApplicationContext(MainApp.class);
+        PaymentService paymentService = context.getBean(PaymentService.class);
+        paymentService.makePayment(amount);
 
     }
 }

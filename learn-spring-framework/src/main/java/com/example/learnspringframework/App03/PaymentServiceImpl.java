@@ -8,17 +8,15 @@ import org.springframework.stereotype.Component;
 @Configuration
 public class PaymentServiceImpl implements PaymentService{
 
-    @Bean
+
     @Override
-    public void makePayment() {
+    public void makePayment(int amount) {
        
-        System.out.println("Payment Started amount Debited");
+        System.out.println(amount +" Payment Started amount Debited");
 
         System.out.println("Processing....");
 
-        System.out.println("payment successfull amount credited");
+        System.out.println(amount +" payment successfully amount credited");
     }
 
-
-    
 }
